@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Ventas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0a9fc6f603.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        
+        <nav class="navegador" id="navegador">
+            <div class="navIzquierdo">
+                <div class="logo">
+                    <a href="index.html"><img id="logo" src="img/logo.jpg"></a>    
+                </div>
+                <a href="#" class="fas fa-lock"> Login</a>
+                <a href="#" class="fas fa-user-plus">  Crear Cuenta</a>
+            </div>
+            <div class="navDerecho">
+                <div id="navCuenta"></div>
+                <input type="text" placeholder="Buscar">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#contacto">Contactanos</a>
+                <a href="#" class="fab fa-opencart" id="carrito"> 5</a>
+            </div>
+
+        </nav>
+        <div class="contenido" id="contenido">
+                <div class="venta " id="venta">
+                    <div class="ventaIzq" id="ventaIzq">
+                        <a href="#">Addidas</a>
+                        <a href="#">Nike</a>
+                        <a href="#">CR7</a>
+                        <a href="#">Rojo</a>
+                        <a href="#">Negro</a>
+                        <a href="#">Mercurial</a>
+                    </div>
+                    <div class="ventaDerecha" id="ventaDerecha">                  
+                    </div>
+                </div>
+                <div class="login desactivo" id="login">
+                    <div class="contenedorCrearCuenta">
+                        <div id="mensajeLogin" class="mensajeCrearCuenta desactivo">
+                        </div>
+                        <form action="#" class="formulario" id="formLogin">
+                            <p class="text-center">Ingrese los Datos</p>
+                            <img src="img/logo.jpg" alt="Logo">
+                            <label for="nombreLogin">Nombres</label>
+                            <input type="text" name="nombreLogin" id="nombreLogin" placeholder="Ingrese su Nombre" required>
+                            <label for="passLogin">Contraseña</label>
+                            <input type="password" name="passLogin" id="passLogin" placeholder="Ingrese su Contraseña" required>
+                            <div class="btnFila">
+                                <button type="button" class="btn btnIzq" id="btnLoginCrearUsuario"><i class="fas fa-user-plus"></i> Crear Cuenta</button>
+                                <button type="submit" class="btn btnDere" id="btnLoginIngresar"><i class="fas fa-lock"></i> Ingresar</button>
+                            </div>
+                        </form>
+                    </div>  
+                </div>
+                <div class="crearCuenta desactivo" id="crearCuenta">
+                    <div class="contenedorCrearCuenta">
+                        <div id="mensajeCrearCuenta" class="mensajeCrearCuenta desactivo">
+                            
+                        </div>
+                        <form action="#" id="formCrearCuenta" class="formulario">
+                            <p class="text-center">Ingrese los Datos</p>
+                            <label for="nombreCrearCuenta">Nombres</label>
+                            <input type="text" name="nombreCrearCuenta" id="nombreCrearCuenta" placeholder="Ingrese su Nombre" required>
+                            <label for="apellidoCrearCuenta">Apeliidos</label>
+                            <input type="text" name="apellidoCrearCuenta" id="apellidoCrearCuenta" placeholder="Ingrese su Apellido" required>
+                            <label for="cuentaCrearCuenta">Cuenta</label>
+                            <input type="text" name="cuentaCrearCuenta" id="cuentaCrearCuenta" placeholder="Ingrese su Nombre de la cuenta" required>
+                            <label for="passCrearCuenta">Contraseña</label>
+                            <input type="password" name="passCrearCuenta" id="passCrearCuenta" placeholder="Ingrese su Contraseña" required>
+                            <label for="emailCrearCuenta">Correo Electronico</label>
+                            <input type="email" name="emailCrearCuenta" id="emailCrearCuenta" placeholder="Ingrese su Correo" required>
+                            <button type="submit" class="btn "><i class="fas fa-user-plus"></i> Crear Cuenta</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="crearProducto desactivo " id="crearProducto">
+                        <form action="#" class="formulario" id="formulario">
+                            <p class="text-center">Ingrese los Datos</p>
+                            <label for="nombreForm">Nombre del producto</label>
+                            <input type="text" name="nombreForm" placeholder="Nombre del producto" id="nombreForm" maxlength="20" required>
+                            <label for="precioForm">Precio del producto</label>
+                            <input type="number" name="precioForm" placeholder="Precio del producto" id="precioForm" maxlength="20" required>
+                            <label for="cantidadForm">Cantidad del producto</label>
+                            <input type="number" name="cantidadForm" placeholder="Cantidad del producto" id="cantidadForm" maxlength="20" required>
+                            <label for="imgForm">Imagen del Producto</label>
+                            <input type="file" name="imgForm" class="data" name="Imagen del Producto" id="imgForm" accept=".jpg" required>
+                            <button type="submit" class="btn btncerca" id="btnForm"><i class="fas fa-file-upload"></i> Crear Producto</button>
+                            <button class="btn btncerca" id="btnMostarJson"><i class="fas fa-glasses"></i>Mostar Todos Los productos</button>
+                            <button class="btn btncerca" id="btnBorrarJson"><i class="fas fa-trash-alt"></i> Eliminar Todos Los productos</button>
+                            <button class="btn btncerca" id="btnVentasJson"><i class="fas fa-glasses"></i>Mostar Ventas</button>
+                        </form>  
+
+                    <div class="productoCreados" id="productoCreados">
+                        <div class="tituloProductoCreados">
+                            <p>Imagen</p>
+                            <p>Nombre</p>
+                            <p>Cantidad</p>
+                            <p>Precio</p>
+                            <p>Borrar</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="carritoCompra desactivo" id="carritoCompra">
+                    <div class="contenedorCarritoCompra" id="contenedorCarritoCompra">
+                        <div class="tituloProductoCreados">
+                            <p>Imagen</p>
+                            <p>Nombre</p>
+                            <p>Cantidad</p>
+                            <p>Precio</p>
+                            <p>Total</p>
+                        </div>
+                        <div id="mensajeCompra" class="mensajeCompra desactivo">
+                            <p>No ha realizado ninguna compra todavia</p>
+                        </div>
+                        <div class="ComprasCarritoLocal" id="ComprasCarritoLocal">
+                        </div>
+                        <div class="totalcompra">
+                           <div class="total">
+                               <p>TOTAL</p>
+                               <p id="totalLocalStore">100 $</p>
+                           </div>
+                           <button type="button" id="btnComprar" class="btn">COMPRAR</button>
+                        </div>
+                    </div>
+                </div>          
+        </div>
+        <div class="contacto" id="contacto">
+            <div class="enlace">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="enlace">
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+            <div class="enlace">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div class="foother">
+        <p>Gracias por Visitarnos, Vuelva pronto</p>
+    </div>
+
+    <!-- **********  scritp ********** -->
+    <script src="api.js"></script>
+
+</body>
+</html>
+
+
